@@ -4,7 +4,6 @@ package GUI;
 
 
 public class Main_Window extends JFrame  {
-
 	JFrame mainPanel = new JFrame("Anzeige");
 	meinJFrame.setSize(400, 400);
 	JPanel panel = new JPanel();
