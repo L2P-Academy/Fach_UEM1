@@ -2,50 +2,42 @@ package Game;
 
 import java.util.Scanner;
 
-public class SpielCode{
+public class SpielCode {
 
-	private static final String[] WORDS = {"wort1","wort2"};
+	private static final String[] WORDS = { "wort1", "wort2" };
 	Scanner sc = new Scanner(System.in);
-	
-	
-	int maxAttempt= 8; 
+
+	int maxAttempt = 8;
 	int remainingAttemps = maxAttempt;
 	String wordToGuess;
 	String currentWord;
-	
-	
+
 	public void Hangman() {
 		System.out.println("Zu erratendes Word eingeben");
-		String wordToGuess = sc.next();
+		wordToGuess = sc.next();
 		playGame();
 	}
-	
-	public void playGame(){
-	
-		
-		
-		System.out.println("Erate mein Wort");
-		String currentWord = sc.next();
-		
+
+	public void playGame() {
+
+		System.out.println("Errate mein Wort");
+		currentWord = sc.next();
+
 		if (currentWord == wordToGuess) {
 			System.out.println("Du geiler Ficker hast Gewonnen!");
 			Hangman();
-					
 		}
-		
+
 		else {
-			remainingAttemps --;
+			remainingAttemps--;
 			System.out.println("Leider nicht, du hast noch" + remainingAttemps + " versuche");
 			drawMan();
-			
-		}	
+
 		}
-		
-		
-	public void drawMan(){
-		
-		
-		
+	}
+
+	public void drawMan() {
+
 		if (remainingAttemps == 7) {
 			System.out.println("Wrong guess, try again");
 			System.out.println();
@@ -148,16 +140,6 @@ public class SpielCode{
 			Hangman();
 		}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	}
-	
 	}
 
-	
+}
