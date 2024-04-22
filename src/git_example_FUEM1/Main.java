@@ -2,11 +2,12 @@ package git_example_FUEM1;
 
 import geometric_shapes.*;
 import Game.*;
+import demonstration.Hangman_Demo;
 
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hallo Fachinformatiker! :)");
+		// System.out.println("Hallo Fachinformatiker! :)");
 		
 		// 1. Grafische Oberfläche / layouts
 		// 2. Mathematische Operatoren (Vergleiche, Bedingungen)
@@ -23,7 +24,8 @@ public class Main {
 		
 		// -> sehr gute Bezeichner, getreu dem Motto "Keep it simple stupid"
 		
-		
+//		Hangman_Demo game = new Hangman_Demo();
+//		game.play();
 
 	}
 
