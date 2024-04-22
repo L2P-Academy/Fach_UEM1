@@ -4,14 +4,16 @@ import java.util.Scanner;
 
 public class SpielCode {
 
-	private static final String[] WORDS = { "wort1", "wort2" };
+	private static final String[] WORDS = { "Haus", "Baum" };
 	Scanner sc = new Scanner(System.in);
 
+	// Variablen initialisieren
 	int maxAttempt = 8;
 	int remainingAttemps = maxAttempt;
 	String wordToGuess;
 	String currentWord;
 
+	
 	public void Hangman() {
 		System.out.println("Zu erratendes Word eingeben");
 		wordToGuess = sc.next();
@@ -24,7 +26,7 @@ public class SpielCode {
 		currentWord = sc.next();
 
 		if (currentWord == wordToGuess) {
-			System.out.println("Du geiler Ficker hast Gewonnen!");
+			System.out.println("Du Held hast Gewonnen!");
 			Hangman();
 		}
 
