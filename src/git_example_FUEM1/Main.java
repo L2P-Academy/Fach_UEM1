@@ -26,6 +26,11 @@ public class Main {
 		
 //		Hangman_Demo game = new Hangman_Demo();
 //		game.play();
+		
+		SpielCode HM = new SpielCode();
+	//	
+		HM.Hangman();
+		HM.playGame();
 
 	}
 
