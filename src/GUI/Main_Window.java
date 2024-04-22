@@ -16,6 +16,5 @@ public class Main_Window extends JFrame  {
 	JButton button = new JButton("Ja");
 	panel.add(button);
 	mainPanel.add(Panel);
-	
 	mainFrame.setVisible(true);
 }
