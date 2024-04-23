@@ -32,4 +32,25 @@ public class Rectangle extends Shape {
 	public double calculateArea() {
         return length * width;
     }
+	
+	// Method to draw a rectangle in the console
+    public void drawRectangle() {
+        for (int i = 0; i < width; i++) {
+            System.out.print("_ ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < length - 2; i++) {
+            System.out.print("|");
+            for (int j = 0; j < width * 2 - 3; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("|");
+        }
+
+        for (int i = 0; i < width; i++) {
+            System.out.print("_ ");
+        }
+        System.out.println();
+    }
 }
