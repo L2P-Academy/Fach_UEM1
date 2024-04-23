@@ -3,6 +3,8 @@ package git_example_FUEM1;
 import geometric_shapes.*;
 import Game.*;
 import demonstration.Hangman_Demo;
+import demonstration.JSwing_Demo;
+import GUI.Gui_Hangman;
 
 public class Main {
 
@@ -18,19 +20,28 @@ public class Main {
 		// demonstration.DataTypes.demonstrateTypes();
 		
 		// Flächenberechnung für verschiedene Formen
-//		Rectangle rectangle = new Rectangle(10, 20);
+//		Rectangle rectangle = new Rectangle(5, 10);
 //		double totalArea = rectangle.calculateArea();
-//		System.out.println(totalArea);
+//		rectangle.drawRectangle();
+//		
+//		Triangle triangle = new Triangle(10, 3);
+//		triangle.drawTriangle();
 		
 		// -> sehr gute Bezeichner, getreu dem Motto "Keep it simple stupid"
 		
 //		Hangman_Demo game = new Hangman_Demo();
 //		game.play();
 		
-		SpielCode HM = new SpielCode();
-	//	
-		HM.Hangman();
-		HM.playGame();
+//		SpielCode HM = new SpielCode();
+//		
+//		HM.Hangman();
+//		HM.playGame();
+		
+		// Erstellen einer GUI für Hangman
+//		Gui_Hangman gui_Hangman = new Gui_Hangman();
+		
+		// Demo-GUI
+		JSwing_Demo gui_demo = new JSwing_Demo();
 
 	}
 
